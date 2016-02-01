@@ -18,7 +18,7 @@ public class IntroJavaCourse extends ProgrammingCourse{
         return courseNumber;
     }
 
-    public void setCourseNumber(String courseNumber) {
+    public final void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
 
@@ -46,32 +46,27 @@ public class IntroJavaCourse extends ProgrammingCourse{
 
     @Override
     public String getCourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return courseName;
     }
 
     @Override
-    public void setCourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final void setCourseName(String courseName) {
+  if(courseName==null || courseName.isEmpty()) {
+           System.out.println("Sorry you must provide a course name");
+     
+    }
+       else{
+           this.courseName=courseName;
+       }
     }
 
-    @Override
-    public void setCourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
-    @Override
-    public void setCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+    
 
-    @Override
-    public String getprerequisites() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
+    
 
-    @Override
-    public void setprerequisites() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
 }

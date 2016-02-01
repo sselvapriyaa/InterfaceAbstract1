@@ -48,42 +48,27 @@ public class IntroToProgrammingCourse extends ProgrammingCourse {
     }
 
     public final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
-    }
-
-    @Override
-    public void setCourseName() {
+        
         if(courseName==null||courseName.isEmpty()){
             System.out.println("Sorry you must provide a course name");
              }
         else{
             this.courseName=courseName;
         }
+                }
+
+    
+    
+   
+   
+    @Override
+    public String getPrerequisites() {
+        return prerequisites;
     }
 
     @Override
-    public void setCourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public String getprerequisites() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public void setprerequisites() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites=prerequisites;
     }
 
     

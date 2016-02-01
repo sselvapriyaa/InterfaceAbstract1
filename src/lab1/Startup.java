@@ -12,7 +12,24 @@ package lab1;
 public class Startup {
     public static void main(String args[]){
     
-  // AdvancedJavaCourse course = new AdvancedJavaCourse();
+ProgrammingCourse course1=new AdvancedJavaCourse("JavaProgramming","101");
+ProgrammingCourse course2=new IntroJavaCourse("Programmingconcepts","102");
+ProgrammingCourse course3=new IntroToProgrammingCourse("BasicProgramming","103");
+ProgrammingCourse course4=new IntroToProgrammingCourse("PythonProgramming","104");
+
+        System.out.println(course1.getCourseName());
+        System.out.println(course1.getCourseNumber());
+        System.out.println(course2.getCourseName());
+        System.out.println(course2.getCourseNumber());
+        System.out.println(course3.getCourseName());
+        System.out.println(course3.getCourseNumber());
+        System.out.println(course4.getCourseName());
+        System.out.println(course4.getCourseNumber());
+        
+        
+        
+
+ 
 
 }
 }

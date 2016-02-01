@@ -21,9 +21,7 @@ import javax.swing.JOptionPane;
     }
 
 
-    public String getPrerequisites() {
-        return prerequisites;
-    }
+
 
     public void setPrerequisites(String prerequisites) {
         if(prerequisites == null || prerequisites.length() == 0) {
@@ -47,46 +45,38 @@ import javax.swing.JOptionPane;
         return courseName;
     }
 
-    public void setCourseName(String courseName) {
-        this.courseName = courseName;
-    }
+    
 
     public String getCourseNumber() {
         return courseNumber;
     }
 
-    public void setCourseNumber(String courseNumber) {
+    public final void setCourseNumber(String courseNumber) {
         this.courseNumber = courseNumber;
     }
-
     @Override
-    public void setCourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final void setCourseName(String courseName) {
+       if(courseName==null || courseName.isEmpty()) {
+           System.out.println("Sorry you must provide a course name");
+     
     }
+       else{
+           this.courseName=courseName;
+       }
+       }
 
-    @Override
-    public void setCourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
+    
     @Override
     public double getCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+         return credits;
     }
 
-    @Override
-    public void setCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
 
-    @Override
-    public String getprerequisites() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public String getPrerequisites() {
+        return prerequisites;
     }
+    
 
-    @Override
-    public void setprerequisites() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
     
 }
