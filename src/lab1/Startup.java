@@ -15,7 +15,7 @@ public class Startup {
 ProgrammingCourse course1=new AdvancedJavaCourse("JavaProgramming","101");
 ProgrammingCourse course2=new IntroJavaCourse("Programmingconcepts","102");
 ProgrammingCourse course3=new IntroToProgrammingCourse("BasicProgramming","103");
-ProgrammingCourse course4=new IntroToProgrammingCourse("PythonProgramming","104");
+ProgrammingCourse course4=new IntroToProgrammingCourse("Programming","104");
 
         System.out.println(course1.getCourseName());
         System.out.println(course1.getCourseNumber());
