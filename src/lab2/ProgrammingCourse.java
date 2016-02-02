@@ -7,7 +7,7 @@ package lab2;
 
 /**
  *
- * @author Gladwin
+ * @author Gladwin xxx
  */
 public interface ProgrammingCourse {
     public void setcourseName();
