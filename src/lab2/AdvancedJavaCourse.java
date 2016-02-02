@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
  * @version     1.00
  */
 public class AdvancedJavaCourse implements ProgrammingCourse{
-    private String courseName;
+    String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -19,9 +19,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         this.setCourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
-        return courseNumber;
-    }
+   
 
     public final void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
@@ -31,7 +29,8 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         }
         this.courseNumber = courseNumber;
     }
-
+     
+@Override
     public double getCredits() {
         return credits;
     }
@@ -44,7 +43,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         }
         this.credits = credits;
     }
-
+@Override
     public String getPrerequisites() {
         return prerequisites;
     }
@@ -58,42 +57,42 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         this.prerequisites = prerequisites;
     }
 
-    public String getCourseName() {
-        return courseName;
-    }
-
-    public final void setCourseName(String courseName) {
-        if(courseName == null || courseName.length() == 0) {
-            JOptionPane.showMessageDialog(null,
-                    "Error: courseName cannot be null of empty string");
-            System.exit(0);
-        }
-        this.courseName = courseName;
-    }
-
-    public void setcourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setcourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setCredits() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setPrerequisites() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getcourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
+   
+   
+    
+@Override
     public String getcourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return courseNumber;
     }
 
     
+@Override
+    public String getcourseName() {
+        return courseName;
+    }
+
+    
+        public final void setCourseName(String courseName) {
+        if(courseName==null || courseName.isEmpty()) {
+           System.out.println("Sorry you must provide a course name");
+     
+    }
+       else{
+           this.courseName=courseName;
+       }
+    }
+    
+
+    
+
+   
+
+    
+
+    
 }
+
+    
+
+   

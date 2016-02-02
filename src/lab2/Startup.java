@@ -9,6 +9,20 @@ package lab2;
  *
  * @author Gladwin
  */
-public class Startup {
-    
+public class Startup 
+{ 
+    public static void main(String args[]){
+    ProgrammingCourse course1=new AdvancedJavaCourse("Java","101");
+    ProgrammingCourse course2=new IntroJavaCourse("Programmingconcepts","102");
+    ProgrammingCourse course3=new IntroToProgrammingCourse("BasicProgramming","103");
+        System.out.println(course1.getCourseName());
+        System.out.println(course1.getCourseNumber());
+        System.out.println(course2.getCourseName());
+        System.out.println(course2.getCourseNumber());
+        System.out.println(course3.getCourseName());
+        System.out.println(course3.getCourseNumber());
+          
+
 }
+}
+

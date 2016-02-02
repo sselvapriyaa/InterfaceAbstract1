@@ -6,8 +6,8 @@ package lab2;
  * @author      your name goes here
  * @version     1.00
  */
-public class IntroJavaCourse {
-    String courseName;
+public class IntroJavaCourse implements ProgrammingCourse {
+    private String courseName;
     private String courseNumber;
     private double credits;
     private String prerequisites;
@@ -40,6 +40,24 @@ public class IntroJavaCourse {
     public void setPrerequisites(String prerequisites) {
         this.prerequisites = prerequisites;
     }
+
+    public String getcourseName() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setcourseName(String courseName) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getcourseNumber() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public void setcourseNumber(String courseNumber) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    
 
     
 }
