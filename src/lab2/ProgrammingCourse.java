@@ -20,8 +20,5 @@ public interface ProgrammingCourse {
     public abstract String getPrerequisites();
     public abstract void setPrerequisites(String prerequisites);
 
-    public boolean getCourseName();
-
-    public boolean getCourseNumber();
-    
+   
 }

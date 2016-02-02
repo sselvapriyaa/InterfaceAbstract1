@@ -20,8 +20,8 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
     }
 
    
-
-    public final void setCourseNumber(String courseNumber) {
+@Override
+    public  void setCourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
@@ -72,7 +72,7 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
         return courseName;
     }
 
-    
+  @Override  
         public final void setCourseName(String courseName) {
         if(courseName==null || courseName.isEmpty()) {
            System.out.println("Sorry you must provide a course name");
@@ -82,6 +82,9 @@ public class AdvancedJavaCourse implements ProgrammingCourse{
            this.courseName=courseName;
        }
     }
+
+    
+   
     
 
     
