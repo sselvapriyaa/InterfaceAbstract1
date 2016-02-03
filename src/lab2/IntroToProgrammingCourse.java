@@ -8,21 +8,22 @@ import javax.swing.JOptionPane;
  * @author      your name goes here
  * @version     1.00
  */
-public abstract class IntroToProgrammingCourse implements ProgrammingCourse{
+public class IntroToProgrammingCourse implements ProgrammingCourse{
     private String courseName;
     private String courseNumber;
     private double credits;
+    private String prerequisites;
 
     public IntroToProgrammingCourse(String courseName, String courseNumber) {
-        this.setCourseName(courseName);
-        this.setCourseNumber(courseNumber);
+        this.setcourseName(courseName);
+        this.setcourseNumber(courseNumber);
     }
 
-    public String getCourseNumber() {
+    public String getcourseNumber() {
         return courseNumber;
     }
 
-    public final void setCourseNumber(String courseNumber) {
+    public final void setcourseNumber(String courseNumber) {
         if(courseNumber == null || courseNumber.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseNumber cannot be null of empty string");
@@ -44,11 +45,11 @@ public abstract class IntroToProgrammingCourse implements ProgrammingCourse{
         this.credits = credits;
     }
 
-    public String getCourseName() {
+    public String getcourseName() {
         return courseName;
     }
 
-    public final void setCourseName(String courseName) {
+    public final void setcourseName(String courseName) {
         if(courseName == null || courseName.length() == 0) {
             JOptionPane.showMessageDialog(null,
                     "Error: courseName cannot be null of empty string");
@@ -56,6 +57,12 @@ public abstract class IntroToProgrammingCourse implements ProgrammingCourse{
         }
         this.courseName = courseName;
     }
+  public String getPrerequisites() {
+        return prerequisites;
+    }
 
+    public void setPrerequisites(String prerequisites) {
+        this.prerequisites = prerequisites;
+    }
     
 }

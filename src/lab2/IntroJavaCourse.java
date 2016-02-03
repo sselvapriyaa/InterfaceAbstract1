@@ -1,5 +1,7 @@
 package lab2;
 
+import javax.swing.JOptionPane;
+
 /**
  * Describe responsibilities here.
  *
@@ -16,15 +18,28 @@ public class IntroJavaCourse implements ProgrammingCourse {
         this.courseName = courseName;
         this.courseNumber = courseNumber;
     }
-
-    public String getCourseNumber() {
-        return courseNumber;
-    }
-
-    public void setCourseNumber(String courseNumber) {
+       
+@Override
+    public  void setcourseNumber(String courseNumber) {
+        if(courseNumber == null || courseNumber.length() == 0) {
+            JOptionPane.showMessageDialog(null,
+                    "Error: courseNumber cannot be null of empty string");
+            System.exit(0);
+        }
         this.courseNumber = courseNumber;
     }
 
+    public String getcourseNumber() {
+        return courseNumber;
+    }
+
+    public void setcourseName(String courseNumber) {
+        this.courseNumber = courseNumber;
+    }
+@Override
+    public String getcourseName() {
+        return courseName;
+    }
     public double getCredits() {
         return credits;
     }
@@ -41,22 +56,9 @@ public class IntroJavaCourse implements ProgrammingCourse {
         this.prerequisites = prerequisites;
     }
 
-    public String getcourseName() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+   
 
-    public void setcourseName(String courseName) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public String getcourseNumber() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    public void setcourseNumber(String courseNumber) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
+    
     
 
     
