@@ -10,10 +10,10 @@ package lab1;
  * @author Gladwin
  */
 public abstract class ProgrammingCourse {
-    String courseName;
-    String courseNumber;
-    double credits;
-    String prerequisites;
+      private String courseName;
+      private String courseNumber;
+      private double credits;
+      private String prerequisites;
     
     public abstract String getCourseName();
     public abstract void setCourseName(String courseName);
